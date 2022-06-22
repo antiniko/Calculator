@@ -15,7 +15,12 @@ def get_value():
 
 def get_operator():
     oper = input('Введите действие: ')
-    return oper
+    while oper not in ['*', '**', '/', '+', '-']:
+        print ('введите правильное действие: /: деление, *: умножение, -: вычитание, +: сложение, **: возведение в степень')
+        oper = input('Введите действие: ')
+    else:
+         return oper
+    
 
 
 def get_result(res):
